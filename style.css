@@ -112,3 +112,53 @@ footer {
     object-fit: cover;
     border-radius: 6px;
 }
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #c8d0cb;
+    border-radius: 4px;
+    color: #18201d;
+    background: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+body,
+header,
+main,
+nav a,
+.intro,
+.theme-toggle {
+    transition:
+        color 180ms ease,
+        background-color 180ms ease,
+        border-color 180ms ease;
+}
+
+body.dark {
+    color: #eef3ef;
+    background: #111714;
+}
+
+body.dark header,
+body.dark main {
+    background: #18201d;
+}
+
+body.dark header {
+    border-color: #39443f;
+}
+
+body.dark nav a {
+    color: #eef3ef;
+}
+
+body.dark .intro {
+    color: #b8c2bc;
+}
+
+body.dark .theme-toggle {
+    color: #ffffff;
+    border-color: #59635f;
+    background: #27312d;
+}
